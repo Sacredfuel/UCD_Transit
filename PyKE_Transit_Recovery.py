@@ -1,25 +1,12 @@
 import everest
 import matplotlib.pyplot as plt
-import os
-import sys
 from astropy.io import fits
 from astropy.timeseries import BoxLeastSquares
 from astropy.timeseries import TimeSeries
 from astropy.utils.data import get_pkg_data_filename
 import numpy as np
 import pyke
-import logging
 #%matplotlib inline
-
-logger = logging.getLogger()
-logger.setLevel(logging.ERROR)                                         #Prevents spam
-
-
-if os.path.exists("EverestFits-KepFiltered.fits"):
-  os.remove("EverestFits-KepFiltered.fits")
-  print("EverestFits-KepFiltered.fits clobbered")
-else:
-  print("The Filtered does not exist")
 
 star = everest.Everest(201128338, season = 102, clobber = True)          #downloads the fitsfile to variable star
 
