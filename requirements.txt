@@ -1,8 +1,5 @@
-everest-pipeline
-matplotlib
-os
-sys
-astropy
-numpy
-pyke
-logging
+everest-pipeline==2.0.12
+matplotlib==3.1.1
+astropy==4.0
+numpy==1.17.4
+pyketools==3.1.0
