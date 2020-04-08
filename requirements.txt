@@ -1,8 +1,8 @@
-everest
+everest-pipeline
 matplotlib
 os
 sys
 astropy
 numpy
-Pyke
-Logging
+pyke
+logging
