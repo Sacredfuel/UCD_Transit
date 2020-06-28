@@ -11,14 +11,6 @@ sns.set_context('talk')
 #['a', 'b', 'c', 'd', 'e']
 #'EPIC','PERIOD','DEPTH','TRANSITTIME','Rp/Rs'
 
-df = pd.DataFrame(columns = ['EPIC','PERIOD','DEPTH','TRANSITTIME','Rp/Rs'])
-
-def currentFrame():
-    print(df)
-
-def addToFrame(lis):
-    df.append(lis)
-
 class model:
     def __init__(self, EPIC, K2name, maxperiod = 30, window_length=301, sigma_step=1, sigma_max = 10, debug_mode = False):
         self.K2name = K2name
@@ -129,5 +121,3 @@ class model:
     def showStats(self):
         print(self.sigArr)
         print(str(self.bestfitsigma))
-    
-
